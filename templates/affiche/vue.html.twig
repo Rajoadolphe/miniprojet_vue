@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+        <div id="app">
+        <hidden-number></hidden-number>
+        {#{% verbatim %}#}
+            ${ showMessage() }
+
+             <a v-bind:href="lien"> Vue Documentation </a>
+        {#{% endverbatim %}#}
+             {{ 7*9 }}
+          <div :style="monstyle">
+          ${ compteur }
+          </div>
+          <button v-on:click="incrementation">compter</button>
+          <app-equipes></app-equipes>
+        </div>
+        <div id="app2">
+         <hidden-number></hidden-number>
+            ${ showMessage() }
+        </div>
+    
+ {% endblock %}   

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Vue projet{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('main') }}
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}
+            {{ encore_entry_script_tags('main') }}
+            <script src="{{ asset('build/main.js') }}"></script>
+        {% endblock %}
+    </body>
+</html>
